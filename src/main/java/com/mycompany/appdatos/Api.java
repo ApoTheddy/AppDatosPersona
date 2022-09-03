@@ -14,12 +14,11 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 public class Api {
-
     private HttpURLConnection connection;
     private final String urlDni = "https://www.softwarelion.xyz/api/reniec/reniec-dni";
     private final String urlNombres = "https://www.softwarelion.xyz/api/reniec/reniec-nombres";
 
-    private final String token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMzg1LCJjb3JyZW8iOiJhcG90aGVkZHlAaG90bWFpbC5jb20iLCJpYXQiOjE2NjIwNjc5OTN9.eI4OeBe9XRmdgjj6UX7m1fYJ-YiSWdv6RIn2VSlSNZ8";
+    private final String token = "Bearer $yourtoken";
     private final ObjectMapper mapper = new ObjectMapper();
 
     public UserDniModel getDataUserByDni(String dni) {
